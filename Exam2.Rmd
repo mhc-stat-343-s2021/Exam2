@@ -1,0 +1,49 @@
+---
+title: "Exam 2"
+subtitle: "STAT 343: Mathematical Statistics"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+- This exam is **due to Gradescope at 5 PM ET on Sunday, May 2, 2021.** This is a firm deadline. 
+- There are two exam questions, each with multiple parts. You must show all your work to receive full credit.
+- This is a closed notes, closed book, closed Moodle, closed internet exam. You may use the probability distributions PDF that is included with the exam when you pull it from Github. Other resources, besides R, are not permitted.
+- Once you have accessed the exam, you may only ask for clarification on questions from the instructor. Do not communicate with any other students about the exam until after the exams have been returned. Any such communication is a violation of the Honor Code.
+- If you become aware of any honor code violations, you have a duty to report them to the Honor Code Council.
+
+\newpage
+
+# Problem 1
+
+Suppose $X_1,...,X_m\overset{i.i.d.}{\sim} f(x|\theta)$ where 
+
+$$f(x|\theta)=(\theta+1)x^{\theta}, \ 0\leq x \leq 1$$
+
+(a) Find the maximum likelihood estimator, $\hat{\Theta}^{MLE}$ for $\theta$.
+
+(b) What is the large sample distribution of $\hat{\Theta}^{MLE}$? Be as specific as possible, meaning you need to express all terms in the distribution specifically for this problem.
+
+(c) Find an approximate 95\% confidence interval for $\theta$.
+
+(d) What theorems and results are you relying on for your answers in (b) and (c)?
+
+(e) Suppose you are considering three samples with three different sizes, $n=5,50,500$. For which of these samples to you expect the coverage of the 95% confidence interval to be closest to 95%? Why?
+
+\newpage
+
+# Problem 2
+
+Suppose $X_1,...,X_n\overset{i.i.d.}{\sim}Normal(\mu, \sigma^2)$ where both $\mu$ and $\sigma^2$ are unknown.
+
+Consider the following estimators for $\sigma^2$:
+
+- $S_u^2=\frac{1}{n-1}\sum_{i=1}^n(X_i-\bar{X})^2$
+- $S_{mle}^2=\frac{1}{n}\sum_{i=1}^n(X_i-\bar{X})^2$
+- $S_{mse}^2=\frac{1}{n+1}\sum_{i=1}^n(X_i-\bar{X})^2$
+
+(a) Which, if any, of these estimators for $\sigma^2$ is efficient? Show all your work and explain your reasoning in detail for full credit.
+
+(b) If the variance of an estimator attains the Cramer-Rao lower bound asymptotically (for very large $n$), then the estimator is said to be \underline{asymptotically efficient}. Which, if any, of these estimators is asymptotically efficient? For full credit show all of your work and provide detailed reasoning to support your answer(s).
